@@ -1,0 +1,525 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy-Medium", sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --spanBlue-color: #005AE2;
+    --background-color: #0065FE;
+}
+
+body{
+    /* width: 100%vw; */
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: blue;
+}
+
+.button-blue{
+    border-radius: 20px;
+    border: none;
+    background-color: var(--background-color);
+    color: white;
+    padding: 10px 15px;
+}
+
+.button-white{
+    border: none;
+    background-color: white;
+    color: var(--background-color);
+}
+
+ul li{
+    list-style: none;
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    /* grid-template-columns: 20% 3fr 1fr; */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 86%;
+    margin: auto;
+    padding-top: 0.8em;
+}
+
+header .logo img{
+    height: 2.5em;
+}
+
+header .nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 30px;
+    height: 100%;
+    /* width: 80%; */
+}
+
+header .login-buttons .button-blue{
+    padding: 10px 20px;
+    margin-left: 1.5em;
+}
+
+header .login-buttons .button-white a{
+    color: var(--background-color);
+}
+
+
+/* HERO */
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .hero-section{
+    width: 76%;
+    margin-top: 5em;
+}
+
+.container .hero-section .hero-header h1{
+    font-size: 2.5em;
+    text-align: center;
+    /* display: inline-block; */
+    padding-bottom: 1em;
+    clear: both;
+}
+
+.container .hero-section .hero-header span{
+    color: var(--spanBlue-color);
+    font-size: 1em;
+    position: relative;
+}
+
+.container .hero-section .hero-header span img{
+    position: absolute;
+    left: 20%;
+    top: 100%;
+    width: 8.8em;
+}
+
+.container .hero-section .hero-para{
+    width: 60%;
+    margin: auto;
+    /* text-align: center; */
+}
+
+.container .hero-section .hero-para p{
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.container .hero-section .hero-buttons{
+    width: 25%;
+    margin: 3em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .hero-section .hero-buttons .button-blue{
+    padding: 0.5em 2em;
+}
+
+.container .hero-section .hero-buttons .button-white a{
+    /* margin-left: 1em; */
+    color: var(--background-color);
+}
+
+
+/* GRAPHICS */
+.graphics{
+    width: 100%;
+}
+
+.graphics .frame{
+    width: 45%;
+    margin: auto;
+    margin-top: 2em;
+    position: relative;
+}
+
+.graphics .frame .frame-drop{
+    position: absolute;
+    top: -5%;
+    left: 1%;
+    height: 14.5em;
+}
+
+.graphics .frame .sub-frame{
+    margin-bottom: 4em;
+    border: 0.5px solid #005AE2;
+    height: 13em;
+    border-radius: 24px;
+    background-color: rgba(254, 254, 254, 0.1);
+    backdrop-filter: blur(106px);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2.5em;
+}
+
+.graphics .frame .sub-frame p{
+    width: 50%;
+    margin: 1em auto;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.graphics .disk, .disk img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.graphics .advert-container{
+    width: 100%;
+    background-color: #F9FBFD;
+    margin-top: 0;
+}
+
+.graphics .advert-container .advert{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding: 3em 0;
+}
+
+.graphics .advert-container .advert h1{
+    font-size: 2.5em;
+    /* margin-right: 2em; */
+}
+
+.graphics .advert-container .advert h1 span{
+    font-size: 1em;
+    color: var(--spanBlue-color);
+}
+
+.graphics .advert-container .advert .proof{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.graphics .advert-container .advert .proof .work{
+    font-size: 0.8em;
+    width: 8em;
+}
+
+.graphics .advert-container .advert .proof .work p{
+    font-size: 0.9em;
+}
+
+.graphics .advert-container .advert .proof .work h1{
+    font-size: 1.8em;
+}
+
+
+
+
+
+/* FEATURES */
+#features{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7em;
+    width: 85%;
+}
+
+#features .note{
+    width: 35%;
+}
+
+#features .note img{
+    height: 2em;
+}
+
+#features .note h1{
+    font-size: 2em;
+}
+
+#features .note p{
+    width: 92%;
+    margin: auto;
+    margin-top: 1em;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+#features .note h1 span{
+    font-size: 0.8em;
+    color: var(--spanBlue-color);
+}
+
+#features .features-right{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 2em;
+    width: 60%;
+}
+
+#features .features-right .features-item img{
+    height: 2.5em;
+}
+
+#features .features-right .features-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 10em;
+}
+
+#features .features-right .features-item h2{
+    font-size: 1.5em;
+}
+
+
+
+
+
+/* PRICING */
+#pricing{
+    margin-top: 3em;
+    width: 100%;
+}
+
+#pricing .pricing-hero{
+    width: 42%;
+    margin: 8em auto;
+    text-align: center;
+}
+
+
+#pricing .pricing-hero img{
+    height: 2em;
+}
+
+#pricing .pricing-hero h1{
+    font-size: 2.3em;
+}
+
+#pricing .pricing-hero p{
+    width: 88%;
+    margin: auto;
+    margin-top: 1em;
+    line-height: 1.2em;
+    font-size: 0.9em;
+}
+
+#pricing .pricing-hero h1 span{
+    font-size: 1em;
+    color: var(--spanBlue-color);
+}
+
+
+/* Pricing Package */
+#pricing .pricing-package{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 14em;
+    position: relative;
+}
+
+#pricing .pricing-package .package-white{
+    background: #FFFFFF;
+    border: 1px solid #005AE2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 0.8em;
+    padding: 1.4em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 20em;
+    width: 18em;
+}
+
+#pricing .pricing-package .package-white h2{
+    font-size: 1.7em;
+    margin-top: 0.9em;
+    text-align: left;
+}
+
+#pricing .pricing-package .package-white p{
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+#pricing .pricing-package .package-white ul{
+    width: 80%;
+    margin: auto;
+}
+
+#pricing .pricing-package .package-white ul li{
+    margin: 0.5em 0;
+    list-style-image: url('/img/icons/check-circle-blue.svg');
+    font-size: 0.7em;
+}
+
+
+#pricing .pricing-package .package-blue{
+    position: absolute;
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
+    border-radius: 12px;
+    color: white;
+    padding: 1.4em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 26em;
+    width: 18em;
+    top: -15%;
+}
+
+#pricing .pricing-package .package-blue .title{
+    margin-top: 3.6em;
+    margin-bottom: 0.9em;
+}
+
+#pricing .pricing-package .package-blue h2{
+    font-size: 1.7em;
+    margin-top: 0.6em;
+    text-align: left;
+}
+
+#pricing .pricing-package .package-blue p{
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+#pricing .pricing-package .package-blue ul{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#pricing .pricing-package .package-blue ul li{
+    margin: 0.5em 0;
+    list-style-image: url('/img/icons/check-circle-white.svg');
+    font-size: 0.7em;
+}
+
+
+#pricing .buttons{
+    width: 25%;
+    margin: auto;
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricing .buttons .button-white{
+    margin-right: 1em;
+    border: 1px solid var(--spanBlue-color);
+    border-radius: 1.2em;
+    padding: 0.5em 0.9em;
+    
+}
+
+
+
+/* FORM */
+.trim-url{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    margin-top: 6em;
+}
+
+.trim-url .form{
+    width: 32%;
+    margin: 4em auto;
+    border-radius: 0.8em;
+    background-color: white;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3em 0;
+}
+
+.trim-url .form input{
+    width: 80%;
+    padding: 1.2em;
+    /* padding-left: 2em; */
+    border-radius: 0.8em;
+    border: 1px solid #3284FF;
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+
+.trim-url .form input::placeholder{
+    color: #3284FF;
+    
+}
+
+.trim-url .form .inline{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trim-url .form .inline input{
+    width: 48%;
+}
+
+.trim-url .form button{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    padding: 0.7em;
+    font-size: 0.8em;
+}
+
+.trim-url .form button img{
+    margin-left: 0.3em;
+    height: 1.4em;
+}
+
+.trim-url .form p{
+    width: 80%;
+    margin-top: 1em;
+    text-align: center;
+    color: #3284FF;
+    font-size: 0.8em;
+}
+
+
+
+
+
+/*  */
